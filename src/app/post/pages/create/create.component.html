@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="cabezera">
+        <mat-grid-list cols="1" rowHeight="100px">
+            <mat-grid-tile>
+                <h2>CREATE POST</h2>
+            </mat-grid-tile>
+            
+          </mat-grid-list>
+          
+    </div>
+    
+    <form  [formGroup]="form" (ngSubmit)="crear()">
+    
+        <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Outline form field</mat-label>
+              <input type="number" matInput placeholder="UserId" formControlName='userId'>
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-hint>Ej:1,2,3...</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Outline form field</mat-label>
+              <input matInput placeholder="Titulo" formControlName='title'>
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-hint>Ej:El bosque</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Outline form field</mat-label>
+              <textarea matInput placeholder="Body" formControlName='body'></textarea>              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-hint>Ej. El bosque estaba ...</mat-hint>
+            </mat-form-field>
+          </p>
+          <button type="submit" mat-raised-button color="primary">Save</button>
+
+    </form>
+</div>
