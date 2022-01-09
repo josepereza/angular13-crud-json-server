@@ -2,9 +2,9 @@
   "posts": [
     {
       "userId": 2,
-      "id": 16,
       "title": "sint suscipit perspiciatis velit dolorum rerum ipsa laboriosam odio",
-      "body": "suscipit nam nisi quo aperiam aut\nasperiores eos fugit maiores voluptatibus quia\nvoluptatem quis ullam qui in alias quia est\nconsequatur magni mollitia accusamus ea nisi voluptate dicta"
+      "body": "suscipit nam nisi quo aperiam aut\nasperiores eos fugit maiores voluptatibus quia\nvoluptatem quis ullam qui in alias quia est\nconsequatur magni mollitia accusamus ea nisi voluptate dicta",
+      "id": 16
     },
     {
       "userId": 2,
@@ -14,9 +14,9 @@
     },
     {
       "userId": 2,
-      "id": 18,
       "title": "voluptate et itaque vero tempora molestiae",
-      "body": "eveniet quo quis\nlaborum totam consequatur non dolor\nut et est repudiandae\nest voluptatem vel debitis et magnam"
+      "body": "eveniet quo quis\nlaborum totam consequatur non dolor\nut et est repudiandae\nest voluptatem vel debitis et magnam",
+      "id": 18
     },
     {
       "userId": 2,
@@ -379,10 +379,16 @@
       "body": "nobis facilis odit tempore cupiditate quia\nassumenda doloribus rerum qui ea\nillum et qui totam\naut veniam repellendus"
     },
     {
-      "userId": 8,
-      "id": 79,
-      "title": "pariatur consequatur quia magnam autem omnis non amet",
-      "body": "libero accusantium et et facere incidunt sit dolorem\nnon excepturi qui quia sed laudantium\nquisquam molestiae ducimus est\nofficiis esse molestiae iste et quos"
+      "userId": 1,
+      "title": "pato",
+      "body": "la fiesta edel pato donal",
+      "id": 79
+    },
+    {
+      "userId": "",
+      "title": "gomez",
+      "body": "la gomze era bunea",
+      "id": 80
     }
   ]
 }

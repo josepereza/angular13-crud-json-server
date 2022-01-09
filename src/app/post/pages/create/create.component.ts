@@ -30,7 +30,10 @@ form!:FormGroup
   }
 crear(){
  this.postService.create(this.form.value).subscribe(data=>{
-   console.log(data)
+  this.snackBar.open('Agregado correctamente', 'Undo', {
+    duration: 3000
+  });
+  
  })
 }
 pato(){
@@ -40,5 +43,8 @@ isValid(campo:string){
   console.log(this.form.controls['title'])
    return this.form.controls[campo].errors && this.form.controls[campo].touched
     
+}
+volver(){
+  this.router.navigateByUrl('post/index');
 }
 }

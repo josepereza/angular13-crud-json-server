@@ -8,6 +8,7 @@ import { ViewComponent } from './pages/view/view.component';
 import { CreateComponent } from './pages/create/create.component';
 import { EditComponent } from './pages/edit/edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     IndexComponent,
     ViewComponent,
     CreateComponent,
-    EditComponent
+    EditComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
@@ -23,6 +25,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule
+  ],
+  exports:[
+    NavbarComponent
   ]
 })
 export class PostModule { }

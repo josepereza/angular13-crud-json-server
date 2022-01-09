@@ -36,8 +36,7 @@ form!:FormGroup;
   }
 actualizar(){
   this.postService.update(this.id,this.form.value).subscribe(data=>{
-    console.log('Post updated successfully!');
-
+    this.router.navigateByUrl('post/index');
   })
 
 }
