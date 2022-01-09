@@ -21,12 +21,14 @@ this.postService.getAll().subscribe((data:any)=>{
   //this.dataSource= new MatTableDataSource(data);
   //this.dataSource.data=data
   this.dataSource.data=data
+  this.posts=data;
   console.log(this.dataSource.data)
 })
   }
 delete(id:number){
   this.postService.delete(id).subscribe(data=>{
-    console.log('registro borrado')
+    this.dataSource.data = this.dataSource.data.filter((item:any) => item.id !== id);
+    console.log('Post deleted successfully!');
   })
 }
 }

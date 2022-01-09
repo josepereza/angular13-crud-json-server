@@ -1,40 +1,48 @@
 <div class="container">
-    <div class="cabezera">
-        <mat-grid-list cols="1" rowHeight="100px">
-            <mat-grid-tile>
-                <h2>CREATE POST</h2>
-            </mat-grid-tile>
-            
-          </mat-grid-list>
-          
-    </div>
-    
-    <form  [formGroup]="form" (ngSubmit)="crear()">
-    
-        <p>
-            <mat-form-field appearance="outline">
-              <mat-label>Outline form field</mat-label>
-              <input type="number" matInput placeholder="UserId" formControlName='userId'>
-              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-              <mat-hint>Ej:1,2,3...</mat-hint>
-            </mat-form-field>
-          </p>
-          <p>
-            <mat-form-field appearance="outline">
-              <mat-label>Outline form field</mat-label>
-              <input matInput placeholder="Titulo" formControlName='title'>
-              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-              <mat-hint>Ej:El bosque</mat-hint>
-            </mat-form-field>
-          </p>
-          <p>
-            <mat-form-field appearance="outline">
-              <mat-label>Outline form field</mat-label>
-              <textarea matInput placeholder="Body" formControlName='body'></textarea>              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-              <mat-hint>Ej. El bosque estaba ...</mat-hint>
-            </mat-form-field>
-          </p>
-          <button type="submit" mat-raised-button color="primary">Save</button>
+  <div class="cabezera">
+    <mat-grid-list cols="1" rowHeight="100px">
+      <mat-grid-tile>
+        <h2>CREATE POST</h2>
+      </mat-grid-tile>
 
-    </form>
+    </mat-grid-list>
+
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="crear()">
+
+    <p>
+      <mat-form-field>
+        <mat-label>Introduce Usuario</mat-label>
+        <input type="number" matInput placeholder="UserId" formControlName='userId'>
+        <mat-icon matSuffix>person</mat-icon>
+        <mat-hint>Ej:1,2,3...</mat-hint>
+      </mat-form-field>
+
+    </p>
+    <!-- <div *ngIf="f['title'].touched && f['title'].invalid" class="alert alert-danger">
+            <div *ngIf="f['title'].errors && f['title'].errors['required']">Title is required.</div>
+        </div> -->
+    <p class="alert" *ngIf="isValid('title')"> Campo No valido</p>
+    <p>
+
+      <mat-form-field>
+        <mat-label>Introduce Titulo</mat-label>
+        <input matInput placeholder="Titulo" formControlName='title'>
+        <mat-icon matSuffix>title</mat-icon>
+        <mat-hint>Ej:El bosque</mat-hint>
+      </mat-form-field>
+    </p>
+    <p class="alert" *ngIf="isValid('body')"> Campo No valido</p>
+    <p>
+      <mat-form-field>
+        <mat-label>Introduce commentario</mat-label>
+        <textarea matInput placeholder="Body"  formControlName='body'></textarea>
+        <mat-icon matSuffix>insert_comment</mat-icon>
+        <mat-hint>Ej. El bosque estaba ...</mat-hint>
+      </mat-form-field>
+    </p>
+    <button type="submit" mat-raised-button color="primary">Save</button>
+
+  </form>
 </div>

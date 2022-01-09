@@ -14,3 +14,12 @@ h2 {
 button{
     width: 90%;
 }
+.alert{
+    margin: auto;
+   width: 90%;
+    margin-bottom: 10px !important;
+    background-color: rgb(247, 14, 14);
+    padding: 10px 20px;
+    color: white;
+  
+}
